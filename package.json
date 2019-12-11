@@ -1,0 +1,56 @@
+{
+  "name": "serverless-introspect",
+  "version": "1.0.0",
+  "description": "Introspect serverless internals to aid plugin development",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlopez/serverless-introspect.git"
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "keywords": [
+    "serverless",
+    "serverless framework",
+    "serverless configuration",
+    "serverless introspect",
+    "serverless hooks",
+    "serverless commands",
+    "serverless events",
+    "serverless plugin",
+    "serverless plugin development",
+    "serverless.yml",
+    "amazon web services",
+    "aws",
+    "lambda",
+    "npm scripts"
+  ],
+  "author": {
+    "name": "Jesus Lopez",
+    "email": "jesus@jesusla.com",
+    "url": "https://github.com/jlopez"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlopez/serverless-introspect/issues"
+  },
+  "homepage": "https://github.com/jlopez/serverless-introspect#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "husky": "^3.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "peerDependencies": {
+    "serverless": ">= 1.48.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run lint"
+    }
+  }
+}
