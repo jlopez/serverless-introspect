@@ -20,6 +20,7 @@ class ServerlessIntrospect {
               command: {
                 usage: 'Limit hooks to the ones provided by the provided command',
                 shortcut: 'c',
+                type: 'string',
                 customValidation: {
                   regularExpression: /^[a-z]+(:[a-z]+)*$/,
                   errorMessage: 'Commands should be provided in a:b:c format',
